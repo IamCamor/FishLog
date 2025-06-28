@@ -9,7 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 // import 'package:firebase_analytics/firebase_analytics.dart'; // TODO: Add for Google Analytics
 // import 'package:yandex_appmetrica/yandex_appmetrica.dart'; // TODO: Add for Yandex Metrica (if Flutter plugin available)
 
-// --- Brand Colors from Logo ---
+// - -- Brand Colors from Logo ---
 const Color primaryColor = Color(0xFF32B5B0); // Warm turquoise
 const Color secondaryColor = Color(0xFF1F3B5C); // Dark blue
 const Color backgroundColor = Color(0xFFF7F3EB); // Light beige
