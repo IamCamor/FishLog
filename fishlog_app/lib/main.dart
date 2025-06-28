@@ -1207,7 +1207,7 @@ class _AddFishingLogScreenState extends State<AddFishingLogScreen> {
                             style: Theme.of(context).textTheme.bodyLarge,
                           ),
                           Text(
-                            'Temperature: ${_currentTemperature != null ? '${_currentTemperature}°C' : 'N/A'}',
+                            'Temperature: ${_currentTemperature != null ? '$_currentTemperature°C' : 'N/A'}',
                             style: Theme.of(context).textTheme.bodyMedium,
                           ),
                         ],
@@ -1245,7 +1245,7 @@ class MapScreen extends StatefulWidget {
 
 class _MapScreenState extends State<MapScreen> {
   // Simulate fishing locations
-  List<FishingLocation> _allFishingLocations = [
+  final List<FishingLocation> _allFishingLocations = [
     FishingLocation(
       id: 'loc_1',
       name: 'Forest Lake',
@@ -1436,7 +1436,7 @@ class _MapScreenState extends State<MapScreen> {
                       Icon(Icons.star, color: Colors.amber, size: 20),
                       const SizedBox(width: 4),
                       Text(
-                        '${location.rating.toStringAsFixed(1)}',
+                        location.rating.toStringAsFixed(1),
                         style: Theme.of(context).textTheme.titleMedium,
                       ),
                       const SizedBox(width: 8),
@@ -2004,7 +2004,7 @@ class _CompetitionsScreenState extends State<CompetitionsScreen> {
                         'Required parameters:',
                         style: Theme.of(context).textTheme.titleSmall?.copyWith(fontWeight: FontWeight.bold),
                       ),
-                      ...comp.mandatoryParams.map((param) => Text('- $param', style: Theme.of(context).textTheme.bodyMedium)).toList(),
+                      ...comp.mandatoryParams.map((param) => Text('- $param', style: Theme.of(context).textTheme.bodyMedium)),
                     ],
                     const SizedBox(height: 16),
                     Align(
@@ -2556,7 +2556,7 @@ class _AdminPanelScreenState extends State<AdminPanelScreen> {
                             ),
                           ),
                         ),
-                      )).toList(),
+                      )),
                 const SizedBox(height: 16),
                 if (_isAuthenticated) // Only authenticated users can comment
                   TextFormField(
