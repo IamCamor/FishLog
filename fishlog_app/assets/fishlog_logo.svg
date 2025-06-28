@@ -1,0 +1,15 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main shape of the fish, resembling a fin/tail for a pin -->
+  <path d="M100 10C65 10 35 40 35 75C35 110 65 140 100 170C135 140 165 110 165 75C165 40 135 10 100 10Z" fill="#32B5B0"/>
+  
+  <!-- Fish eye (small circle) -->
+  <circle cx="100" cy="55" r="8" fill="#FFFFFF"/>
+
+  <!-- Detail resembling a marker or fin that turns the fish into a pin -->
+  <path d="M100 170 C110 185 100 195 90 185 L100 170 Z" fill="#1F3B5C"/>
+
+  <!-- Text logo "FishLog" -->
+  <text x="100" y="190" font-family="Arial, sans-serif" font-size="24" fill="#1F3B5C" text-anchor="middle" dominant-baseline="auto" font-weight="bold">
+    FishLog
+  </text>
+</svg>
