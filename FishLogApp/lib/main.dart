@@ -1192,7 +1192,7 @@ class _AddFishingLogScreenState extends State<AddFishingLogScreen> {
                 margin: EdgeInsets.zero,
                 elevation: 0,
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                color: Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.5),
+                color: Theme.of(context).colorScheme.surfaceContainerHighest.withOpacity(0.5),
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Row(
